@@ -4,8 +4,6 @@
 #  SPDX-License-Identifier: Apache-2.0
 #
 
-require_relative 'osdp_sys'
-
 module OSDP
   module LibFlag
     ENFORCE_SECURE = Sys::FLAG_ENFORCE_SECURE

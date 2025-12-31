@@ -16,6 +16,9 @@
 #include <utils/utils.h>
 #include <osdp.h>
 
+extern VALUE mOSDP;
+extern VALUE mOSDPSys;
+
 typedef struct {
 	bool is_cp;
 
@@ -43,7 +46,7 @@ typedef struct {
 	char *name;
 } rbosdp_pd_t;
 
-/* from utils.c */
+/* from rb_utils.c */
 int rbosdp_parse_int(VALUE obj, int *res);
 int rbosdp_parse_str(VALUE obj, char **str);
 int rbosdp_parse_bytes(VALUE obj, uint8_t **data, int *length, bool allow_empty);

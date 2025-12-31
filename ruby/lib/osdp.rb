@@ -4,7 +4,7 @@
 #  SPDX-License-Identifier: Apache-2.0
 #
 
-require_relative 'osdp/osdp_sys'
+require 'osdp/osdp_sys'
 require_relative 'osdp/constants'
 require_relative 'osdp/helpers'
 require_relative 'osdp/channel'
