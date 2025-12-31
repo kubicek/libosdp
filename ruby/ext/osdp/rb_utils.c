@@ -41,6 +41,7 @@ int rbosdp_parse_int(VALUE obj, int *res)
 	return -1;
 }
 
+/* NOTE: Caller must free the returned string with free() */
 int rbosdp_parse_str(VALUE obj, char **str)
 {
 	if (TYPE(obj) != T_STRING) {

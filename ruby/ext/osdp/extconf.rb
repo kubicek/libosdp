@@ -18,11 +18,17 @@ def generate_config_header(repo_root)
   
   template = File.read(template_path)
   
-  # Get git info
-  git_branch = `git rev-parse --abbrev-ref HEAD 2>/dev/null`.strip
-  git_rev = `git log --pretty=format:%h -n 1 2>/dev/null`.strip
-  git_tag = `git describe --exact-match --tags 2>/dev/null`.strip
-  git_diff = `git diff --quiet --exit-code 2>/dev/null`.strip
+  # Get git info safely
+  require 'open3'
+  git_branch, _ = Open3.capture2('git', 'rev-parse', '--abbrev-ref', 'HEAD', :err => File::NULL)
+  git_rev, _ = Open3.capture2('git', 'log', '--pretty=format:%h', '-n', '1', :err => File::NULL)
+  git_tag, _ = Open3.capture2('git', 'describe', '--exact-match', '--tags', :err => File::NULL)
+  git_diff, _ = Open3.capture2('git', 'diff', '--quiet', '--exit-code', :err => File::NULL)
+  
+  git_branch = git_branch.strip
+  git_rev = git_rev.strip
+  git_tag = git_tag.strip
+  git_diff = git_diff.strip
   
   # Replace template variables
   config = template.gsub('@PROJECT_VERSION@', '3.1.0')

@@ -68,7 +68,7 @@ end
 
 device = ARGV[0]
 
-# Describe the PD (setting scbk=nil puts the PD in install mode)
+# Create PD info with generated key (for production, use a stored key)
 channel = SerialChannel.new(device, options[:baudrate])
 pd_info = [
   OSDP::PDInfo.new(101, channel, scbk: OSDP::KeyStore.gen_key)

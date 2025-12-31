@@ -30,6 +30,9 @@ module OSDP
   # Serial channel implementation for OSDP
   class SerialChannel < Channel
     def initialize(device, baud_rate: 9600)
+      raise ArgumentError, 'device cannot be nil or empty' if device.nil? || device.empty?
+      raise ArgumentError, 'baud_rate must be a positive integer' unless baud_rate.is_a?(Integer) && baud_rate > 0
+      
       @device = device
       @baud_rate = baud_rate
       # Actual serial implementation would go here
