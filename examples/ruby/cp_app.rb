@@ -100,7 +100,7 @@ while count < 5
 
   # Check if we have an event from PD
   event = cp.get_event(pd_info[0].address)
-  puts "PD-0 Sent Event #{event}" if event
+  puts "CP: Received event from PD-0: #{event}" if event
 
   count += 1
   sleep(2)
