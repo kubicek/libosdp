@@ -1,0 +1,1 @@
+/home/runner/work/libosdp/.codeql-scratch/dbs/cpp/working/autobuild/bin/cc -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/c_pd_sample.dir/link.d CMakeFiles/c_pd_sample.dir/pd_app.c.o -o ../../bin/c_pd_sample  -Wl,-rpath,/home/runner/work/libosdp/libosdp/_codeql_build_dir/lib ../../lib/libosdp.so.3.1.0 /usr/lib/x86_64-linux-gnu/libcrypto.so
