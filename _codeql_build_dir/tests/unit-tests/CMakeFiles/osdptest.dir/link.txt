@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libosdptest.a CMakeFiles/osdptest.dir/__/__/src/osdp_common.c.o CMakeFiles/osdptest.dir/__/__/src/osdp_phy.c.o CMakeFiles/osdptest.dir/__/__/src/osdp_pd.c.o CMakeFiles/osdptest.dir/__/__/src/osdp_sc.c.o CMakeFiles/osdptest.dir/__/__/src/osdp_file.c.o CMakeFiles/osdptest.dir/__/__/src/osdp_cp.c.o CMakeFiles/osdptest.dir/__/__/src/crypto/openssl.c.o
+/usr/bin/ranlib ../../lib/libosdptest.a

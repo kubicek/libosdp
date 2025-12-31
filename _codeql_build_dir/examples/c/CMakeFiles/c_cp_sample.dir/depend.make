@@ -1,0 +1,2 @@
+# Empty dependencies file for c_cp_sample.
+# This may be replaced when dependencies are built.

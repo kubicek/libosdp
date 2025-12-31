@@ -1,0 +1,18 @@
+# frozen_string_literal: true
+
+require 'rake/extensiontask'
+require 'bundler/gem_tasks'
+
+Rake::ExtensionTask.new('osdp_sys') do |ext|
+  ext.ext_dir = 'ext/osdp'
+  ext.lib_dir = 'lib/osdp'
+end
+
+task default: [:compile]
+
+desc 'Run basic tests'
+task :test do
+  ruby 'test_basic.rb'
+end
+
+task test: :compile

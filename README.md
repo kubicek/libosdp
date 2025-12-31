@@ -35,13 +35,13 @@ This protocol is developed and maintained by [Security Industry Association][20]
   - No run-time memory allocation. All memory is allocated at init-time
   - No external dependencies (for ease of cross compilation)
   - Fully non-blocking, asynchronous design
-  - Provides Rust, Python3, and C++ bindings for the C library for faster
+  - Provides Rust, Python3, Ruby, and C++ bindings for the C library for faster
     integration into various development phases.
   - Includes dozens of integration and unit tests which are incorporated in CI
     to ensure higher quality of releases.
   - Built-in, sophisticated, debugging infrastructure and tools ([see][14]).
   - Packaged and distributed through various package repositories such as
-    Cargo [crates][19], [PyPI][12], [Vcpkg][33], [PlatformIO][18], etc.,
+    Cargo [crates][19], [PyPI][12], [RubyGems][40], [Vcpkg][33], [PlatformIO][18], etc.,
 
 ## Usage Overview
 
@@ -94,6 +94,11 @@ info and usage examples.
 
 LibOSDP is available as a [python package][12]. See [python/README.md][13] for
 more info and usage examples.
+
+### Ruby API
+
+LibOSDP is available as a [ruby gem][40]. See [ruby/README.md][41] for more
+info and usage examples.
 
 ## Supported Commands and Replies
 
@@ -252,3 +257,5 @@ Your support will ensure sustained development of LibOSDP.
 [37]: https://crates.io/crates/osdpctl
 [38]: https://github.com/goToMain/libosdp/blob/master/include/osdp.h
 [39]: https://github.com/goToMain/libosdp/tree/master/examples
+[40]: https://rubygems.org/gems/libosdp
+[41]: https://github.com/goToMain/libosdp/tree/master/ruby

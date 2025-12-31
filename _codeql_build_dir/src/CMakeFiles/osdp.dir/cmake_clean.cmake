@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "../lib/.3"
+  "../lib/libosdp.pdb"
+  "../lib/libosdp.so"
+  "../lib/libosdp.so.3"
+  "../lib/libosdp.so.3.1.0"
+  "CMakeFiles/osdp.dir/link.d"
+  "CMakeFiles/osdp.dir/__/utils/src/crc16.c.o"
+  "CMakeFiles/osdp.dir/__/utils/src/crc16.c.o.d"
+  "CMakeFiles/osdp.dir/__/utils/src/disjoint_set.c.o"
+  "CMakeFiles/osdp.dir/__/utils/src/disjoint_set.c.o.d"
+  "CMakeFiles/osdp.dir/__/utils/src/list.c.o"
+  "CMakeFiles/osdp.dir/__/utils/src/list.c.o.d"
+  "CMakeFiles/osdp.dir/__/utils/src/logger.c.o"
+  "CMakeFiles/osdp.dir/__/utils/src/logger.c.o.d"
+  "CMakeFiles/osdp.dir/__/utils/src/queue.c.o"
+  "CMakeFiles/osdp.dir/__/utils/src/queue.c.o.d"
+  "CMakeFiles/osdp.dir/__/utils/src/slab.c.o"
+  "CMakeFiles/osdp.dir/__/utils/src/slab.c.o.d"
+  "CMakeFiles/osdp.dir/__/utils/src/utils.c.o"
+  "CMakeFiles/osdp.dir/__/utils/src/utils.c.o.d"
+  "CMakeFiles/osdp.dir/crypto/openssl.c.o"
+  "CMakeFiles/osdp.dir/crypto/openssl.c.o.d"
+  "CMakeFiles/osdp.dir/osdp_common.c.o"
+  "CMakeFiles/osdp.dir/osdp_common.c.o.d"
+  "CMakeFiles/osdp.dir/osdp_cp.c.o"
+  "CMakeFiles/osdp.dir/osdp_cp.c.o.d"
+  "CMakeFiles/osdp.dir/osdp_file.c.o"
+  "CMakeFiles/osdp.dir/osdp_file.c.o.d"
+  "CMakeFiles/osdp.dir/osdp_pd.c.o"
+  "CMakeFiles/osdp.dir/osdp_pd.c.o.d"
+  "CMakeFiles/osdp.dir/osdp_phy.c.o"
+  "CMakeFiles/osdp.dir/osdp_phy.c.o.d"
+  "CMakeFiles/osdp.dir/osdp_sc.c.o"
+  "CMakeFiles/osdp.dir/osdp_sc.c.o.d"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/osdp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
